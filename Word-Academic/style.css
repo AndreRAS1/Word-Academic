@@ -1,0 +1,67 @@
+/* Configurações Gerais (Clean Code) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Menu de Navegação */
+header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Garante que ela não cole 100% na parede da tela */
+    width: 100%;     /* Faz o menu ocupar a largura toda */
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; }
+.logo span { color: #007bff; }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { text-decoration: none; color: #333; transition: 0.3s; }
+nav ul li a:hover { color: #007bff; }
+
+/* Seção Principal */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: transform 0.3s; /* Animação ao passar o mouse */
+}
+
+.botao:hover {
+    transform: scale(1.05); /* Aumenta levemente */
+}
+
+/* Animação de Entrada */
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animacao-entrada {
+    animation: aparecer 1s ease-out forwards;
+}
