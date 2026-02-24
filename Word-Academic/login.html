@@ -2,28 +2,58 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | WordAcademic</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
-<body class="corpo-login">
+<body>
 
-    <div class="login-box animacao-entrada">
-        <h2>Bem-vindo!</h2>
-        <p>Faça login para gerenciar seu intercâmbio.</p>
-        
-        <form class="formulario">
-            <input type="email" placeholder="E-mail de acesso" required>
-            <input type="password" placeholder="Sua senha" required>
-            <button type="submit" class="botao-principal">Acessar Conta</button>
-        </form>
+<div class="container">
+    <h2 id="titulo">Login</h2>
 
-        <div class="footer-login">
-            <span>Novo por aqui? <a href="#">Crie sua conta</a></span>
-            <hr>
-            <a href="inicio.html" class="voltar">← Voltar para a Home</a>
-        </div>
-    </div>
+    <form id="loginForm">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">Login</button>
+        <a href="#" onclick="mostrarCadastro()">Não tem conta? Criar conta</a>
+    </form>
+
+    <form id="cadastroForm" style="display:none;">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">Criar conta</button>
+        <a href="#" onclick="mostrarLogin()">Já tem conta? Login</a>
+    </form>
+</div>
+
+<script>
+    const loginForm = document.getElementById("loginForm");
+    const cadastroForm = document.getElementById("cadastroForm");
+    const titulo = document.getElementById("titulo");
+
+    function mostrarCadastro() {
+        loginForm.style.display = "none";
+        cadastroForm.style.display = "block";
+        titulo.innerText = "Cadastro";
+    }
+
+    function mostrarLogin() {
+        cadastroForm.style.display = "none";
+        loginForm.style.display = "block";
+        titulo.innerText = "Login";
+    }
+
+    // 👉 AO CLICAR EM LOGIN, VAI PARA A HOME
+    loginForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // impede recarregar a página
+        window.location.href = "inicio.html"; // NOME DA SUA TELA HOME
+    });
+
+    cadastroForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Conta criada com sucesso!");
+        mostrarLogin();
+    });
+</script>
 
 </body>
 </html>
