@@ -1,33 +1,341 @@
-<!DOCTYPE html>
+]<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intercâmbio Global | Explore o Mundo</title>
-    
-    <!-- Esta linha liga o HTML ao seu arquivo de estilos -->
+    <title>GlobalConnect | Sua Jornada Começa Aqui</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="container">
-            <div class="logo">Word<span>Academic</span></div>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="#">Destinos</a></li>
-                <li><a href="#">Sobre</a></li>
+    <nav class="navbar">
+        <div class="container flex-nav">
+            <div class="logo">WORD<span>ACADEMIC</span></div>
+            <ul class="nav-links">
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#diferenciais">Nossos Diferenciais</a></li>
+                <li><a href="#processo">Como Funciona?</a></li>
+                <li><a href="#depoimentos">Quem já foi</a></li>
+                <li class="cta-nav"><a href="#">Orçamento Grátis</a></li>
             </ul>
-        </nav>
-    </header>
+            <div class="menu-toggle">☰</div>
+        </div>
+    </nav>
 
-    <main class="container">
-        <section class="hero">
-            <h1 class="animacao-entrada">Transforme sua vida com um intercâmbio</h1>
-            <p class="animacao-entrada">Estude no exterior e aprenda novas culturas com suporte completo.</p>
-            <a href="#" class="botao animacao-entrada">Quero saber mais</a>
-        </section>
-    </main>
+<section class="hero" id="hero-section">
+    <div class="carousel-container">
+        <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1800&q=80');"></div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1800&q=80');"></div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1503125595091-7fb165506041?auto=format&fit=crop&w=1800&q=80');"></div>
+    </div>
 
+    <div class="hero-bg-overlay"></div>
+
+    <div class="hero-content container">
+        <h1 class="animate-fade-in">Sua jornada global começa agora.</h1>
+        <p class="animate-fade-in delay-1">Conectamos você com as melhores escolas e universidades do mundo. Descomplicado e sem taxas ocultas.</p>
+        <div class="search-bar animate-fade-in delay-2">
+            <select>
+                <option>Escolha seu Destino</option>
+                <option>Irlanda</option>
+                <option>Canadá</option>
+                <option>Austrália</option>
+                <option>Malta</option>
+            </select>
+            <button>Explorar Agora</button>
+        </div>
+    </div>
+
+    <button class="carousel-control prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="carousel-control next" onclick="changeSlide(1)">&#10095;</button>
+</section>
+
+    <section id="stats" class="stats-bar animate-on-scroll">
+        <div class="container flex-stats">
+            <div class="stat-item"><strong>+50</strong> <p>Países Atendidos</p></div>
+            <div class="stat-item"><strong>100%</strong> <p>Suporte 24/7</p></div>
+            <div class="stat-item"><strong>+10K</strong> <p>Sonhos Realizados</p></div>
+            <div class="stat-item"><strong>R$ 0</strong> <p>Taxa de Agência</p></div>
+        </div>
+    </section>
+
+    <section id="destinos" class="section-padding">
+        <div class="container">
+            <h2 class="title-center animate-on-scroll">Prepare as malas: Destinos em Destaque</h2>
+            <p class="subtitle-center animate-on-scroll delay-1">Explore os lugares mais procurados e descubra sua próxima aventura.</p>
+            <div class="grid-destinos animate-on-scroll delay-2">
+                
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1549918830-11ec3d0317f9?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="card-body">
+                        <h3>Dublin, Irlanda</h3>
+                        <p>A capital vibrante da Irlanda, perfeita para estudo e trabalho. Cultura e cervejas artesanais.</p>
+                        <span class="price">A partir de R$ 12.500</span>
+                        <a href="#" class="btn-card">Ver Pacotes</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1559511260-66a654ae982a?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="card-body">
+                        <h3>Valletta, Malta</h3>
+                        <p>Estude inglês no coração do Mediterrâneo. Praias paradisíacas e custo acessível.</p>
+                        <span class="price">A partir de R$ 8.900</span>
+                        <a href="#" class="btn-card">Ver Pacotes</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="card-body">
+                        <h3>Vancouver, Canadá</h3>
+                        <p>Qualidade de vida, natureza exuberante e ensino de alto nível. Uma experiência completa.</p>
+                        <span class="price">A partir de R$ 15.200</span>
+                        <a href="#" class="btn-card">Ver Pacotes</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="card-body">
+                        <h3>Sydney, Austrália</h3>
+                        <p>Praias icônicas, clima tropical e um mercado de trabalho aquecido para estudantes.</p>
+                        <span class="price">A partir de R$ 18.000</span>
+                        <a href="#" class="btn-card">Ver Pacotes</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img" style="background-image: url(londres.jpg);"></div>
+                    <div class="card-body">
+                        <h3>Londres, Inglaterra</h3>
+                        <p>O berço do inglês, com cultura milenar e oportunidades infinitas. Viva a realeza!</p>
+                        <span class="price">A partir de R$ 14.000</span>
+                        <a href="#" class="btn-card">Ver Pacotes</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img" style="background-image: url('nova.jpg');"></div>
+                    <div class="card-body">
+                        <h3>Nova York, EUA</h3>
+                        <p>A cidade que nunca dorme. Experiência de intercâmbio com alta imersão cultural.</p>
+                        <span class="price">A partir de R$ 17.500</span>
+                        <a href="#" class="btn-card">Ver Pacotes</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-60 animate-on-scroll delay-3">
+                <button class="btn-primary-lg">Ver Todos os Destinos</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="section-padding bg-gradient">
+        <div class="container">
+            <h2 class="title-center animate-on-scroll">Por que escolher a GlobalConnect?</h2>
+            <p class="subtitle-center animate-on-scroll delay-1">Confiabilidade e expertise em cada passo da sua jornada.</p>
+            <div class="grid-diferenciais animate-on-scroll delay-2">
+                <div class="feature-card">
+                    <h3><span class="icon">✈️</span> Orientação Completa</h3>
+                    <p>Do visto à acomodação, cuidamos de tudo para sua viagem ser tranquila.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><span class="icon">💰</span> Preço Justo</h3>
+                    <p>Negociamos direto com as escolas para garantir o melhor valor, sem taxas surpresa.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><span class="icon">🌍</span> Suporte Local</h3>
+                    <p>Equipes dedicadas em vários países para você ter ajuda sempre que precisar.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><span class="icon">✅</span> Processo Simplificado</h3>
+                    <p>Menos burocracia e mais agilidade para você focar no seu objetivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="processo" class="section-padding">
+        <div class="container">
+            <h2 class="title-center animate-on-scroll">Sua jornada em 4 passos simples</h2>
+            <div class="process-steps animate-on-scroll delay-1">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Escolha seu Sonho</h3>
+                    <p>Explore destinos, cursos e escolas com a ajuda dos nossos especialistas.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Organize os Detalhes</h3>
+                    <p>Visto, passagem, seguro e acomodação: cuidamos de toda a papelada para você.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Embarque na Aventura</h3>
+                    <p>Receba todas as orientações pré-viagem e esteja pronto para o seu intercâmbio.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Viva a Experiência</h3>
+                    <p>Conte com suporte local e aproveite cada momento da sua nova vida no exterior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials section-padding bg-light">
+        <div class="container">
+            <h2 class="title-center animate-on-scroll">A voz de quem já realizou</h2>
+            <p class="subtitle-center animate-on-scroll delay-1">Inspire-se nas histórias de quem viveu o intercâmbio dos sonhos.</p>
+            <div class="grid-testimonials animate-on-scroll delay-2">
+                <div class="t-card">
+                    <p>"A GlobalConnect transformou meu sonho em realidade! Suporte impecável e preço justo. Recomendo demais!"</p>
+                    <div class="t-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de Maria">
+                        <div>
+                            <strong>Maria Clara, 23</strong>
+                            <span>Dublin, Irlanda</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-card">
+                    <p>"Nunca imaginei que seria tão fácil! Eles cuidaram de tudo, do visto à escola. Malta foi inesquecível!"</p>
+                    <div class="t-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de João">
+                        <div>
+                            <strong>João Pedro, 20</strong>
+                            <span>Valletta, Malta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-card">
+                    <p>"O intercâmbio em Vancouver superou todas as expectativas. Uma experiência de vida que a GlobalConnect tornou possível."</p>
+                    <div class="t-author">
+                        <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Foto de Lucas">
+                        <div>
+                            <strong>Lucas Mendes, 25</strong>
+                            <span>Vancouver, Canadá</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-60 animate-on-scroll delay-3">
+                <button class="btn-primary-lg">Leia Mais Depoimentos</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <h2 class="title-center animate-on-scroll">Perguntas Frequentes</h2>
+            <div class="faq-container animate-on-scroll delay-1">
+                <div class="faq-item">
+                    <div class="faq-question">Quais destinos a GlobalConnect oferece?</div>
+                    <div class="faq-answer">Oferecemos intercâmbios em mais de 50 países, incluindo Irlanda, Canadá, Austrália, Malta, Inglaterra, EUA, Nova Zelândia e muitos outros!</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Como funciona o processo de visto?</div>
+                    <div class="faq-answer">Nossa equipe de especialistas te dará todo o suporte necessário, desde a documentação até o agendamento, para garantir que seu visto seja aprovado.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Há suporte no destino?</div>
+                    <div class="faq-answer">Sim! Temos equipes locais e parcerias estratégicas para oferecer suporte 24/7, seja para emergências ou dicas do dia a dia.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">A GlobalConnect cobra alguma taxa de agência?</div>
+                    <div class="faq-answer">Não! Nosso modelo de negócio é baseado em parcerias diretas com as escolas, garantindo que você pague o preço de tabela, sem surpresas.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section-padding bg-gradient">
+        <div class="container">
+            <h2 class="title-center animate-on-scroll">Fique por Dentro: Nosso Blog</h2>
+            <div class="grid-blog animate-on-scroll delay-1">
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1549490349-f55a6d2524d7?auto=format&fit=crop&w=400&q=80');"></div>
+                    <div class="blog-body">
+                        <span>Dicas de Viagem</span>
+                        <h3>5 Motivos para Escolher Malta para seu Próximo Intercâmbio</h3>
+                        <a href="#" class="btn-link">Leia Mais →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80');"></div>
+                    <div class="blog-body">
+                        <span>Estudar e Trabalhar</span>
+                        <h3>Guia Completo para Trabalhar no Canadá com Visto de Estudante</h3>
+                        <a href="#" class="btn-link">Leia Mais →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1517404215737-0130f29dc7a3?auto=format&fit=crop&w=400&q=80');"></div>
+                    <div class="blog-body">
+                        <span>Curiosidades</span>
+                        <h3>Descubra a Cultura Vibrante de Dublin: O que Fazer Além da Escola</h3>
+                        <a href="#" class="btn-link">Leia Mais →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-60 animate-on-scroll delay-2">
+                <button class="btn-primary-lg">Ver Todas as Notícias</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-final" class="cta-section animate-on-scroll">
+        <div class="container text-center">
+            <h2 class="animate-fade-in">Pronto para o próximo passo?</h2>
+            <p class="animate-fade-in delay-1">Fale com um de nossos especialistas e receba um orçamento personalizado, sem compromisso.</p>
+            <button class="btn-accent-lg animate-fade-in delay-2">Solicitar Orçamento Grátis</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="logo">GLOBAL<span>CONNECT</span></div>
+                <p>Conectando você com o mundo.</p>
+                <div class="social-icons">
+                    </div>
+            </div>
+            <div>
+                <h4>Navegue</h4>
+                <ul>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#processo">Como Funciona</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Vistos e Imigração</a></li>
+                    <li><a href="#">Seguro Viagem</a></li>
+                    <li><a href="#">Câmbio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <p>Rua Exemplo, 123 - Centro<br>Cidade, Estado - CEP 12345-678</p>
+                <p>E-mail: contato@globalconnect.com</p>
+                <p>Telefone: (XX) XXXX-XXXX</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 GlobalConnect. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
