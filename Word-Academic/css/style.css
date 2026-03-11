@@ -200,3 +200,67 @@ body { background: var(--text-light); color: var(--text-dark); line-height: 1.6;
     position: relative;
     z-index: 5;
 }
+
+/* Botão Redondo */
+.chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #003366;
+    color: #ffcc00;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 9999;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Janela do Chat */
+.chat-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 320px;
+    height: 450px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    display: none; /* Começa escondido */
+    flex-direction: column;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.chat-header { background: #003366; color: white; padding: 15px; display: flex; justify-content: space-between; font-weight: bold; }
+.chat-messages { flex: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; background: #f9f9f9; }
+.chat-footer { padding: 10px; border-top: 1px solid #eee; display: flex; }
+.chat-footer input { flex: 1; border: none; outline: none; padding: 10px; }
+
+/* Balões de Mensagem */
+.msg-user {
+    background: #003366;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 10px;
+    align-self: flex-end; /* Direita */
+    margin-bottom: 10px;
+    max-width: 80%;
+    font-size: 14px;
+}
+
+.msg-bot {
+    background: #e2e8f0;
+    color: #333;
+    padding: 10px;
+    border-radius: 10px 10px 10px 0;
+    align-self: flex-start; /* Esquerda */
+    margin-bottom: 10px;
+    max-width: 80%;
+    font-size: 14px;
+}
+
+#btnFecharChat { background: none; border: none; color: white; cursor: pointer; font-size: 20px; }
+#btnEnviarMsg { background: none; border: none; color: #003366; cursor: pointer; font-size: 20px; }

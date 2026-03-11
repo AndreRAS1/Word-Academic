@@ -1,4 +1,4 @@
-]<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,7 @@
         <div class="container flex-nav">
             <div class="logo">WORD<span>ACADEMIC</span></div>
             <ul class="nav-links">
+                <li><a href="login.html">Login</a></li>
                 <li><a href="#destinos">Destinos</a></li>
                 <li><a href="#diferenciais">Nossos Diferenciais</a></li>
                 <li><a href="#processo">Como Funciona?</a></li>
@@ -343,7 +344,25 @@
             </div>
         </div>
     </footer>
+    <!-- Botão Flutuante (Bolinha) -->
+<button class="chat-toggle" id="btnAbrirChat">💬</button>
 
-    <script src="script.js"></script>
+<!-- Janela do Chat (Quadrado) -->
+<div class="chat-window" id="janelaChat">
+    <div class="chat-header">
+        <span>Assistente WordAcademic</span>
+        <button id="btnFecharChat">×</button>
+    </div>
+    <div class="chat-messages" id="listaMensagens">
+        <div class="msg-bot">Olá! Sou o assistente virtual. Como posso ajudar com seu intercâmbio hoje?</div>
+    </div>
+    <div class="chat-footer">
+        <input type="text" id="campoMensagem" placeholder="Digite sua dúvida...">
+        <button id="btnEnviarMsg">➤</button>
+    </div>
+</div>
+
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
