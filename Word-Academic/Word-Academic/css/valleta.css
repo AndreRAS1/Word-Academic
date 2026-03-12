@@ -1,0 +1,111 @@
+/* ESTILOS PÁGINA DE DETALHES DUBLIN */
+.container-detalhes {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.detalhes-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.img-destaque {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.tag-top {
+    background: #ffcc00;
+    color: #003366;
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.info-principal h1 {
+    font-size: 42px;
+    color: #003366;
+    margin: 15px 0;
+}
+
+.descricao-longa {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.cards-info-rapida {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    background: #f1f4f8;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #003366;
+}
+
+.box-preco {
+    border-top: 1px solid #eee;
+    padding-top: 25px;
+}
+
+.valor-total {
+    font-size: 32px;
+    font-weight: bold;
+    color: #28a745;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.btn-amarelo-detalhes {
+    width: 100%;
+    background: #ffcc00;
+    color: #003366;
+    border: none;
+    padding: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.o-que-inclui {
+    margin-top: 50px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.lista-inclusos {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.lista-inclusos li {
+    font-size: 15px;
+    color: #444;
+}
+
+.btn-voltar {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    font-size: 14px;
+}
