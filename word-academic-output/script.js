@@ -139,3 +139,5 @@ document.querySelectorAll('.faq-item').forEach(function(item) {
 var toggle = document.querySelector('.menu-toggle');
 var nav    = document.querySelector('.nav-links');
 if (toggle) toggle.addEventListener('click', function() { nav.classList.toggle('open'); });
+
+
