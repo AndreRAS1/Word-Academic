@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    const API_KEY = "AIzaSyDYe5UiMojE1Jz3DFiVSlyhciAW2nIVRJE"; 
+    const API_KEY = ""; 
     const MODELO = "gemini-1.5-flash";
 
-    // 2. SELEÇÃO DE ELEMENTOS
+   
     const btnAbrir = document.getElementById('btnAbrirChat');
     const btnFechar = document.getElementById('btnFecharChat');
     const janela = document.getElementById('janelaChat');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const campoTexto = document.getElementById('campoMensagem');
     const listaMsgs = document.getElementById('listaMensagens');
 
-    // 3. ABRIR E FECHAR
+
     if (btnAbrir) {
         btnAbrir.onclick = () => { janela.style.display = 'flex'; btnAbrir.style.display = 'none'; };
     }
@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
         btnFechar.onclick = () => { janela.style.display = 'none'; btnAbrir.style.display = 'block'; };
     }
 
-    // 4. FUNÇÃO PARA FALAR COM A IA
+
     async function chamarIA(perguntaUsuario) {
-        // Cria balão de "Digitando..."
+        
         const botDiv = document.createElement('div');
         botDiv.classList.add('msg-bot');
         botDiv.innerText = "Pensando...";
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
             const textoIA = data.candidates[0].content.parts[0].text;
             
-            // Substitui o "Pensando..." pela resposta real
+        
             botDiv.innerText = textoIA;
 
         } catch (error) {
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         listaMsgs.scrollTop = listaMsgs.scrollHeight;
     }
 
-    // 5. ENVIAR MENSAGEM
+
     function enviar() {
         const msg = campoTexto.value.trim();
         if (msg !== "") {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             campoTexto.value = ""; 
             listaMsgs.scrollTop = listaMsgs.scrollHeight;
 
-            // Chama a Inteligência Artificial
+   
             chamarIA(msg);
         }
     }
