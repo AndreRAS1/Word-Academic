@@ -109,3 +109,115 @@
     font-weight: bold;
     font-size: 14px;
 }
+
+.galeria-container {
+    position: relative; /* Necessário para posicionar as setas */
+    width: 100%;
+    height: 100%;
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 51, 102, 0.7); /* Azul WordAcademic transparente */
+    color: #ffcc00; /* Amarelo */
+    border: none;
+    font-size: 24px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.seta:hover { background-color: #003366; }
+
+.anterior { left: 10px; }
+.proxima { right: 10px; }
+
+.img-destaque {
+    width: 100%;
+    height: 450px; /* Ajuste a altura conforme preferir */
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+/* SEÇÃO O QUE INCLUI - PREMIUM */
+.o-que-inclui {
+    margin-top: 60px;
+    padding: 60px 40px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+}
+
+.header-secao {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tag-azul {
+    color: #003366;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.header-secao h2 {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.header-secao p { color: #777; font-size: 16px; }
+
+/* GRID DE BENEFÍCIOS */
+.grid-beneficios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card-beneficio {
+    background: #f8fafd;
+    padding: 30px;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.card-beneficio:hover {
+    transform: translateY(-10px);
+    background: #fff;
+    border-color: #ffcc00; /* Borda amarela no hover */
+    box-shadow: 0 15px 30px rgba(0, 51, 102, 0.1);
+}
+
+.icone-box {
+    font-size: 30px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card-beneficio h3 {
+    color: #003366;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.card-beneficio p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}

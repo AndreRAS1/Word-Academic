@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intercâmbio Dublin | WordAcademic</title>
-    <link rel="stylesheet" href="../css/dublin.css">
+    <title>Intercâmbio Valletta | WordAcademic</title>
+    <link rel="stylesheet" href="../css/valleta.css">
 </head>
 <body class="bg-light">
 
@@ -17,14 +17,19 @@
 
     <main class="container-detalhes">
         <div class="detalhes-header">
-            <img src="../img/dublin-ireland-dublin.jpg" alt="Dublin" class="img-destaque">
+            <img src="../img/dublin-ireland-dublin.jpg" alt="dublin" class="img-destaque" id="fotoPrincipal">
+                <!-- Setas de navegação -->
+    <button class="seta anterior" onclick="mudarFoto(-1)">&#10094;</button>
+    <button class="seta proxima" onclick="mudarFoto(1)">&#10095;</button>
             <div class="info-principal">
                 <span class="tag-top">MAIS PROCURADO</span>
                 <h1>Dublin, Irlanda</h1>
                 <p class="descricao-longa">
-                    Dublin é o destino perfeito para quem busca unir estudo de alta qualidade com a oportunidade de trabalho. 
-                    Conhecida pelo seu povo acolhedor e vida noturna animada, a capital da Ilha Esmeralda oferece 
-                    visto de estudante que permite trabalhar até 20h semanais.
+                  Dublin é um ótimo lugar para quem deseja se dedicar aos estudos e ampliar seus conhecimentos em um ambiente internacional. <br>
+                   A capital da Irlanda é conhecida por suas excelentes instituições de ensino, oferecendo cursos de qualidade em diversas áreas e proporcionando uma experiência acadêmica enriquecedora. <br>
+                    Além disso, a cidade possui uma cultura vibrante, com bibliotecas, <br>
+                   centros culturais e universidades que incentivam o aprendizado, tornando o ambiente ideal para quem quer evoluir nos estudos e desenvolver novas habilidades.
+
                 </p>
                 <div class="cards-info-rapida">
                     <div class="info-item"><strong>Duração:</strong> 25 Semanas</div>
@@ -38,17 +43,53 @@
             </div>
         </div>
 
-        <section class="o-que-inclui">
-            <h2>O que está incluso no pacote?</h2>
-            <ul class="lista-inclusos">
-                <li>✅ Curso de Inglês (15h/semana)</li>
-                <li>✅ Seguro Saúde Obrigatório (Government Insurance)</li>
-                <li>✅ Suporte para abertura de conta bancária</li>
-                <li>✅ Orientação para emissão do IRP (Visto)</li>
-                <li>✅ 1 semana de acomodação inicial</li>
-            </ul>
-        </section>
-    </main>
+      <section class="o-que-inclui">
+    <div class="header-secao">
+        <span class="tag-azul">EXCLUSIVIDADE WORDACADEMIC</span>
+        <h2>Tudo o que preparamos para você</h2>
+        <p>Sua única preocupação será arrumar as malas. Nós cuidamos do resto.</p>
+    </div>
 
+    <div class="grid-beneficios">
+        <div class="card-beneficio">
+            <div class="icone-box">📚</div>
+            <h3>Curso de Inglês</h3>
+            <p>15h por semana em escolas certificadas no coração de Valletta.</p>
+        </div>
+
+        <div class="card-beneficio">
+            <div class="icone-box">🏥</div>
+            <h3>Seguro Saúde</h3>
+            <p>Seguro obrigatório (Government Insurance) incluso para sua segurança.</p>
+        </div>
+
+        <div class="card-beneficio">
+            <div class="icone-box">🏦</div>
+            <h3>Apoio Bancário</h3>
+            <p>Suporte completo para abertura de conta em bancos locais malteses.</p>
+        </div>
+
+        <div class="card-beneficio">
+            <div class="icone-box">🛂</div>
+            <h3>Suporte de Visto</h3>
+            <p>Assessoria especializada para emissão do seu IRP (Visto de Estudante).</p>
+        </div>
+
+        <div class="card-beneficio">
+            <div class="icone-box">🏠</div>
+            <h3>Acomodação</h3>
+            <p>Sua primeira semana garantida em residência estudantil selecionada.</p>
+        </div>
+
+        <div class="card-beneficio">
+            <div class="icone-box">✈️</div>
+            <h3>Transfer</h3>
+            <p>Recepção no aeroporto e transporte privativo até sua nova casa.</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <script src="../js/dublin.js"></script>
 </body>
 </html>

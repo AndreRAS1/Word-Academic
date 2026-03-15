@@ -17,7 +17,10 @@
 
     <main class="container-detalhes">
         <div class="detalhes-header">
-            <img src="../img/valletta-malta.jpg" alt="Valletta" class="img-destaque">
+            <img src="../img/valletta.jpg" alt="Valletta" class="img-destaque" id="fotoPrincipal">
+                <!-- Setas de navegação -->
+    <button class="seta anterior" onclick="mudarFoto(-1)">&#10094;</button>
+    <button class="seta proxima" onclick="mudarFoto(1)">&#10095;</button>
             <div class="info-principal">
                 <span class="tag-top">MAIS PROCURADO</span>
                 <h1>Valletta, Malta</h1>
@@ -32,23 +35,59 @@
                     <div class="info-item"><strong>Moeda:</strong> Euro (€)</div>
                 </div>
                 <div class="box-preco">
-                    <span class="valor-total">R$ 12.500,00</span>
+                    <span class="valor-total">R$ 8.900,00</span>
                     <button class="btn-amarelo-detalhes">Solicitar Orçamento Grátis</button>
                 </div>
             </div>
         </div>
 
-        <section class="o-que-inclui">
-            <h2>O que está incluso no pacote?</h2>
-            <ul class="lista-inclusos">
-                <li>✅ Curso de Inglês (15h/semana)</li>
-                <li>✅ Seguro Saúde Obrigatório (Government Insurance)</li>
-                <li>✅ Suporte para abertura de conta bancária</li>
-                <li>✅ Orientação para emissão do IRP (Visto)</li>
-                <li>✅ 1 semana de acomodação inicial</li>
-            </ul>
-        </section>
-    </main>
+      <section class="o-que-inclui">
+    <div class="header-secao">
+        <span class="tag-azul">EXCLUSIVIDADE WORDACADEMIC</span>
+        <h2>Tudo o que preparamos para você</h2>
+        <p>Sua única preocupação será arrumar as malas. Nós cuidamos do resto.</p>
+    </div>
 
+    <div class="grid-beneficios">
+        <div class="card-beneficio">
+            <div class="icone-box">📚</div>
+            <h3>Curso de Inglês</h3>
+            <p>15h por semana em escolas certificadas no coração de Valletta.</p>
+        </div>
+
+        <div class="card-beneficio">
+            <div class="icone-box">🏥</div>
+            <h3>Seguro Saúde</h3>
+            <p>Seguro obrigatório (Government Insurance) incluso para sua segurança.</p>
+        </div>
+
+        <div class="card-beneficio">
+            <div class="icone-box">🏦</div>
+            <h3>Apoio Bancário</h3>
+            <p>Suporte completo para abertura de conta em bancos locais malteses.</p>
+        </div>
+
+        <div class="card-beneficio">
+            <div class="icone-box">🛂</div>
+            <h3>Suporte de Visto</h3>
+            <p>Assessoria especializada para emissão do seu IRP (Visto de Estudante).</p>
+        </div>
+
+        <div class="card-beneficio">
+            <div class="icone-box">🏠</div>
+            <h3>Acomodação</h3>
+            <p>Sua primeira semana garantida em residência estudantil selecionada.</p>
+        </div>
+
+        <div class="card-beneficio">
+            <div class="icone-box">✈️</div>
+            <h3>Transfer</h3>
+            <p>Recepção no aeroporto e transporte privativo até sua nova casa.</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <script src="../js/valletta.js"></script>
 </body>
 </html>

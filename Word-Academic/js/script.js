@@ -72,3 +72,36 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnEnviar) btnEnviar.onclick = enviar;
     if (campoTexto) campoTexto.onkeypress = (e) => { if (e.key === 'Enter') enviar(); };
 });
+
+
+let slideIndex = 0;
+
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(index) {
+
+    slides.forEach(slide => {
+        slide.classList.remove("active");
+    });
+
+    if (index >= slides.length) {
+        slideIndex = 0;
+    }
+
+    if (index < 0) {
+        slideIndex = slides.length - 1;
+    }
+
+    slides[slideIndex].classList.add("active");
+}
+
+function changeSlide(direction) {
+    slideIndex += direction;
+    showSlide(slideIndex);
+}
+
+// troca automática
+setInterval(() => {
+    slideIndex++;
+    showSlide(slideIndex);
+}, 5000);
