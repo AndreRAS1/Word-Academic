@@ -64,7 +64,7 @@ body {
         border-radius: 10px;
         -webkit-box-shadow: 0px 0px 6px -1px #000000; 
         box-shadow: 0px 0px 6px -1px #000000;
-        background: #10305b;
+        background: #376096;
 
         display: flex;
         align-items: center;
@@ -75,7 +75,7 @@ body {
             height: 520px;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
-            background: #f1c925;
+            background: #aaadc2;
 
             display: none;
             flex-direction: column;
@@ -87,7 +87,7 @@ body {
             width: 320px;
             height: 520px;
             border-radius: 10px;
-            background: #10305b;
+            background: #3d6394;
 
             display: flex;
             flex-direction: column;
@@ -117,6 +117,12 @@ body {
                     .social img {
                         cursor: pointer;
                     }
+                    .banner img {
+                        cursor: pointer;
+                        width: 70%; 
+                        height: auto; 
+                    }
+
 
             .box-login .box-account {
                 width: 80%;
